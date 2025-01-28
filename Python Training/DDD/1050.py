@@ -1,5 +1,4 @@
 DDD = input()
-DDD = int(DDD)
 
 DDDdict = {
     "61": "Brasilia",
@@ -11,22 +10,7 @@ DDDdict = {
     "27": "Vitoria",
     "31": "Belo Horizonte"
 }
-
-if DDD == 61:
-    print(DDDdict["61"])
-elif DDD == 71:
-    print(DDDdict["71"])
-elif DDD == 11:
-    print(DDDdict["11"])
-elif DDD == 21:
-    print(DDDdict["21"])
-elif DDD == 32:
-    print(DDDdict["32"])
-elif DDD == 19:
-    print(DDDdict["19"])
-elif DDD == 27:
-    print(DDDdict["27"])
-elif DDD == 31:
-    print(DDDdict["31"])
+if DDD in DDDdict.keys():
+    print(DDDdict[DDD])
 else:
     print("DDD not found")
