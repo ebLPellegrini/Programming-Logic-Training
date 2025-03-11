@@ -19,8 +19,8 @@ def main():
                 elif house_Px > division_Px and house_Py < division_Py:
                     print('SE')
                 elif house_Px < division_Px and house_Py < division_Py:
-                    print('SO')
+                    print('SW')
                 elif house_Px < division_Px and house_Py > division_Py:
-                    print('NO')                     
+                    print('NW')                     
     
 main()
