@@ -6,12 +6,12 @@ def main():
         if x == 0 or y == 0:
             proceed = False
         elif x > 0 and y > 0:
-            print('primeiro')
+            print('first')
         elif x < 0 and y > 0:
-            print('segundo')
+            print('second')
         elif x < 0 and y < 0:
-            print('terceiro')
+            print('third')
         elif x > 0 and y < 0:
-            print('quarto')
+            print('fourth')
     
 main()
