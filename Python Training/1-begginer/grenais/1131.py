@@ -15,7 +15,7 @@ def main():
             
         valid = False
         while valid == False:
-            print('Novo grenal (1-sim 2-nao)')
+            print('New grenal (1 - YES 2 - NO)')
             answer = int(input())
             
             if answer == 2:
@@ -24,13 +24,13 @@ def main():
             elif answer == 1:
                 valid = True
     
-    print('%i grenais\nInter:%i\nGremio:%i\nEmpates:%i' %(grenais, inter_Victories, gremio_Victories, draw))
+    print('%i grenais\nInter:%i\nGremio:%i\nDraws:%i' %(grenais, inter_Victories, gremio_Victories, draw))
     
     if inter_Victories > gremio_Victories:
-        print('Inter venceu mais')
+        print('Inter won more games')
     elif gremio_Victories > inter_Victories:
-        print('Gremio venceu mais')
+        print('Gremio won more games')
     elif inter_Victories == gremio_Victories:
-        print('Nao houve vencedor')
+        print('There is no team that won more games')
         
 main()
