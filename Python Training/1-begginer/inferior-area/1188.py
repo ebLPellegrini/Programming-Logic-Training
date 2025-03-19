@@ -35,6 +35,6 @@ def operation(letter, storage):
     elif letter == 'M':
         return sum/30
     else:
-        return 'invalid'
+        return 0
 
 main()
