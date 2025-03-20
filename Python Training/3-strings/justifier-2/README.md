@@ -1,0 +1,2 @@
+### Annotations ###
+- I Learned how to use re.sub to replace all parts of the line who had several spaces and .strip to end with the spaces before and after the string -> re.sub(pattern, repl, string, count=0, flags=0)
