@@ -1,4 +1,3 @@
-from math import fmod
 def main():
     while True:
         array_Size = int(input())
