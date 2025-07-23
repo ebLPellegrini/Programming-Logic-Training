@@ -1,11 +1,13 @@
 def main():
     queue = circularQueue(5)
     print(queue.isEmpty())
+    print(queue.isFull())
     queue.enqueue(10)
     queue.enqueue(20)
     queue.enqueue(30)
     queue.enqueue(40)
     queue.enqueue(50)
+    print(queue.isEmpty())
     print(queue.isFull())
     queue.printCircularQueue()
     print(queue.dequeue())
@@ -33,7 +35,7 @@ class circularQueue:
                 self.front = self.rear
                 
     def dequeue(self):
-        if self.isEmpty():
+        if self.isEmpty() == True:
             return None
         item = self.items[self.front]
         self.items[self.front] = None
