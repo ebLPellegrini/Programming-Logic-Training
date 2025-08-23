@@ -28,6 +28,7 @@ class LinkedList:
     def getSize(self):
         return self.size
     
+    #O(1)
     def prepend(self, value):
         node = Node(value)
         if self.isEmpty():
@@ -39,6 +40,7 @@ class LinkedList:
         
         self.size += 1
     
+    #O(1)    
     def append(self, value):
         node = Node(value)
         if self.isEmpty():
@@ -49,7 +51,8 @@ class LinkedList:
             self.tail = node
         
         self.size += 1
-        
+    
+    #O(1)        
     def removeFromFront(self):
         if self.isEmpty():
             return None
@@ -59,6 +62,7 @@ class LinkedList:
         self.size -= 1
         return value
     
+    #O(1)    
     def removeFromEnd(self):
         if self.isEmpty():
             return None
