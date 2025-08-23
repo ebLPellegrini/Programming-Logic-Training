@@ -62,7 +62,7 @@ class LinkedList:
         self.size -= 1
         return value
     
-    #O(1)    
+    #O(n)    
     def removeFromEnd(self):
         if self.isEmpty():
             return None
