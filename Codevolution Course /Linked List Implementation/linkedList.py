@@ -51,7 +51,7 @@ class LinkedList:
             while previous.next != None:
                 previous = previous.next
             previous.next = node
-            self.size += 1
+        self.size += 1
            
     def insert(self, value, index):
         if index > self.size or index < 0:
@@ -76,7 +76,8 @@ class LinkedList:
         if index == 0:
             removedNode = self.head
             self.head = self.head.next
-            return removedNode
+            self.size -=1
+            return removedNode.value
         else:
             temp = self.head
             for i in range(index - 1):
